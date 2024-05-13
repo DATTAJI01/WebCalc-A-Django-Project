@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebCalc</title>
+
+</head>
+<body>
+    <section class="'calculator">
+        <h1>Calculator</h1>
+        <form action="{% url 'calculate' %}" method="POST">
+        {% csrf_token %}
+            <label for="First_value">Input-01</label>
+            <input type="text" placeholder="Input-01", name="First_value">
+
+            <label for="Second_value">Input-02</label>
+            <input type="text" placeholder="Input-02", name="Second_value">
+
+            <label for="Operation">Operation</label>
+            <select name="Operation">
+                <option value="add">Add</option>
+                <option value="subtract">Subtract</option>
+                <option value="multiply">Multiply</option>
+                <option value="divide">Divide</option>
+            </select>
+
+            <input type="submit" value='Calculate' id="calc_btn" class="btn">
+
+            <h3>The result is: {{result}}</h3>
+
+        </form>
+    </section>
+    
+</body>
+</html>
