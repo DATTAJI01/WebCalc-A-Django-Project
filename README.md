@@ -1,3 +1,3 @@
-# WebCalc-A-Django-Project
+# <u>WebCalc-A-Django-Project<u>
 <br>
-By Aman Datta
+By Aman Datta 
