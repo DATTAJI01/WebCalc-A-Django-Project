@@ -12,3 +12,88 @@ body {
     padding: 0;
     margin: 0;
 }
+
+.calculator {
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator-container form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator-container form label {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.calculator-container form input {
+    width: 100%;
+    height: 3rem;
+    font-size: 1.5rem;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 0.5rem;
+}
+
+.calculator-container form select {
+    width: 100%;
+    height: 3rem;
+    font-size: 1.5rem;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 0.5rem;
+}
+
+.calculator-container form input:focus {
+    outline: none;
+}
+
+.calculator-container form select:focus {
+    outline: none;
+}
+
+.calculator-container form input::placeholder {
+    color: #ccc;
+}
+
+.calculator-container form select::placeholder {
+    color: #ccc;
+}
+
+.calculator-container form button {
+    width: 100%;
+    height: 3rem;
+    font-size: 1.5rem;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 0.5rem;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.calculator-container form button:focus {
+    outline: none;
+}
